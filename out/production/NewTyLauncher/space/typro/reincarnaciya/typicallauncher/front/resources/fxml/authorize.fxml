@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="501.0" prefWidth="648.0" style="-fx-background-color: #363636;" stylesheets="@../styles/authorizeStyles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="space.typro.reincarnaciya.typicallauncher.back.controllers.AuthorizeController">
+   <children>
+      <VBox layoutX="10.0" layoutY="6.0" prefHeight="507.0" prefWidth="87.0" style="-fx-background-color: BLACk; -fx-spacing: 5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/picked/account.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/notpick/forum.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/notpick/message.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/notpick/news.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/notpick/settings.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="80.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true" x="10.0">
+               <image>
+                  <Image url="@../leftPanelImg/notpick/play_blocked.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <Pane layoutX="87.0" layoutY="3.0" prefHeight="505.0" prefWidth="538.0">
+         <children>
+            <Pane layoutX="28.0" layoutY="158.0" prefHeight="262.0" prefWidth="522.0">
+               <children>
+                  <VBox layoutX="5.0" layoutY="14.0" prefHeight="134.0" prefWidth="513.0" spacing="5.0" style="-fx-spacing: 10;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Логин" wrappingWidth="78.0" />
+                        <TextField promptText="login" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль" />
+                        <PasswordField promptText="password" />
+                     </children>
+                  </VBox>
+                  <Button layoutX="406.0" layoutY="197.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="102.0" text="Войти" />
+                  <Hyperlink fx:id="registerHypelLink" layoutX="14.0" layoutY="200.0" prefHeight="30.0" prefWidth="215.0" text="Регистрация" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" layoutX="3.0" layoutY="28.0" prefHeight="100.0" prefWidth="553.0">
+               <children>
+                  <Text id="authorizeText" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" layoutX="9.0" layoutY="482.0" prefHeight="16.0" prefWidth="522.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="copyrightText" text="©2023 TypicalProject" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

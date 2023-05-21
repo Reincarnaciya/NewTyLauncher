@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'F77 Minecraft Regular';
+    src: url('Minecraft.ttf');
+}
+.root {
+    -fx-font-size: 16px;
+    -fx-font-family: "F77 Minecraft Regular";
+    src: url('Minecraft.ttf');
+    -fx-background-color: #363636;
+}
+#authorizeText{
+    -fx-font-size: 28px;
+}
+.copyrightText{
+    -fx-fill: GRAY;
+    -fx-font-size: 12px;
+}
+Text {
+    -fx-fill: WHITE;
+}
+Button{
+    -fx-background-color: black;
+    -fx-text-fill: WHITE;
+    -fx-text-alignment: center;
+    -fx-background-radius: 0;
+    -fx-cursor: HAND;
+}
