@@ -17,6 +17,8 @@ import space.typro.reincarnaciya.typicallauncher.back.managers.UpdateManager;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static space.typro.reincarnaciya.typicallauncher.Main.PANEL_MANAGER;
+
 public class MainController implements Initializable {
     @FXML
     public AnchorPane MainPane;
@@ -24,8 +26,6 @@ public class MainController implements Initializable {
     public Text startLoadText;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-
         //Логика до проверки обновления при инициализации окна.
         if (UpdateManager.launcherUpdateAvailable()) {
             String message = "Найдено обновление.\nЖелаете обновить лаунчер?";
@@ -37,7 +37,7 @@ public class MainController implements Initializable {
 
             // Что делают кнопки при нажатии
             cancel.setOnAction(this::cancelUpdate);
-            update.setOnAction(this::update);
+            update.setOnAction(this::updateLauncher);
 
             MainPane.getChildren().clear(); // Полностью очищаем старую панель
             VBox contentBox = new VBox(10); // Расстояние между элементами - 10
@@ -50,17 +50,21 @@ public class MainController implements Initializable {
             contentBox.getChildren().addAll(messageText, buttonBox);
 
             MainPane.getChildren().add(contentBox);
+        }else {
+
+            this.cancelUpdate(null);
         }
+
     }
 
-    private void update(ActionEvent event) {
+    private void updateLauncher(ActionEvent event) {
         System.err.println(event);
     }
 
 
     private void cancelUpdate(ActionEvent event){
-        Panels.startPanel.close();
-        Panels.authorizePane.open();
+        Panels.currentPanel.close();
+        PANEL_MANAGER.openPanel(Panels.launcherPane);
     }
 
 
