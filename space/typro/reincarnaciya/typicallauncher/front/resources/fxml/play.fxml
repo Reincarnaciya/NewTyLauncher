@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="space.typro.reincarnaciya.typicallauncher.back.controllers.PlayController">
+   <children>
+      <ScrollPane fx:id="scrollClientPane" layoutX="14.0" layoutY="14.0" prefHeight="376.0" prefWidth="573.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

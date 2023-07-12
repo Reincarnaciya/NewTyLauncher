@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="788.0" style="-fx-background: #141414;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="space.typro.reincarnaciya.typicallauncher.back.controllers.LauncherController">
+   <children>
+      <AnchorPane fx:id="leftPane" prefHeight="502.0" prefWidth="106.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="104.0" prefHeight="502.0" prefWidth="1.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="20.0" />
+            <ScrollPane hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" prefHeight="502.0" prefWidth="104.0" style="-fx-background-color: #141414; -fx-background: #141414; -fx-border-color: #141414;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <AnchorPane maxHeight="1.7976931348623157E308" prefHeight="495.0" prefWidth="106.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="23.0" layoutY="1.0" prefHeight="494.0" prefWidth="60.0" style="-fx-spacing: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="1.0">
+                           <children>
+                              <Pane fx:id="accountLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Pane>
+                              <Pane fx:id="newsLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Pane>
+                              <Pane fx:id="forumLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Pane>
+                              <Pane fx:id="friendsLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Pane>
+                              <Pane fx:id="settingsLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Pane fx:id="playLeftPane" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fff;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Pane>
+                           </children>
+                           <padding>
+                              <Insets top="36.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="108.0" prefHeight="67.0" prefWidth="680.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="textVBox" alignment="BOTTOM_CENTER" layoutX="-108.0" layoutY="-5.0" prefHeight="489.0" prefWidth="680.0" spacing="10.0" AnchorPane.bottomAnchor="-417.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-5.0">
+               <children>
+                  <Text fx:id="upperText" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center; -fx-fill: #fff; -fx-font-family: Inter; -fx-font-size: 32px;" text="Авторизация" textAlignment="CENTER" wrappingWidth="224.99999487400055" />
+                  <AnchorPane fx:id="lineBelowText" prefHeight="1.0" prefWidth="498.0" style="-fx-background-color: #fff;">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="currentContent" prefHeight="400.0" prefWidth="580.0" style="-fx-background-color: gray;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="50.0" right="50.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

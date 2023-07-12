@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="580.0" style="-fx-background-color: #a9a9a9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="space.typro.reincarnaciya.typicallauncher.back.controllers.RegistrController">
+   <children>
+      <VBox layoutX="31.0" layoutY="14.0" prefHeight="269.0" prefWidth="519.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Логин">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextField promptText="login" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Почта">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <TextField promptText="e-mail" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <PasswordField promptText="password" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Повтор пароля">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <PasswordField promptText="repeat password" />
+         </children>
+      </VBox>
+      <Button layoutX="423.0" layoutY="305.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="143.0" text="Регистрация" />
+      <CheckBox contentDisplay="RIGHT" graphicTextGap="0.0" layoutX="14.0" layoutY="321.0" mnemonicParsing="false" snapToPixel="false" style="-fx-spacing: 5;" text="Я прочитал и принимаю">
+         <graphic>
+            <Hyperlink alignment="CENTER" text="пользовательское соглашение" />
+         </graphic>
+      </CheckBox>
+      <Button fx:id="backButton" layoutX="524.0" layoutY="14.0" mnemonicParsing="false" text="Назад" />
+   </children>
+</AnchorPane>
